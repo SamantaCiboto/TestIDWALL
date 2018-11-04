@@ -2,7 +2,7 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>br.com.automation</groupId>
-  <artifactId>TestAPI</artifactId>
+  <artifactId>TestIDWALL</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <name>Archetype - TestAPI</name>
   <url>http://maven.apache.org</url>
@@ -32,11 +32,7 @@
       <version>2.4.1</version>
       <scope>test</scope>
   </dependency>
-  <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>4.12</version>
-  </dependency>	  
+ 	  
   <dependency> 
 	<groupId>io.rest-assured</groupId>
   		<artifactId>rest-assured</artifactId>
