@@ -3,7 +3,7 @@ import static com.jayway.restassured.RestAssured.*;
 import static org.hamcrest.Matchers.*;
 import static com.jayway.restassured.module.jsv.JsonSchemaValidator.*;
 import org.junit.Test;
-import TestIDWALL.TestToken;
+import br.com.automation.TestIDWALL.TestToken;
 
 public class Desconhecido{
 	
@@ -28,7 +28,7 @@ public class Desconhecido{
 			   .param("cpf_data_de_nascimento", "Data verdadeira")
 			   .param("cpf_nome", "Nome Verdadeiro")
 			   .param("cpf_numero", "CPF Verdadeiro")
-	    	   .body("message", containsString("Válido"));
+	    	   .body("message", containsString("VÃ¡lido"));
 		}
 	
 
