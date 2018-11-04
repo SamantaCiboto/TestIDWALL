@@ -3,7 +3,7 @@ import static com.jayway.restassured.RestAssured.*;
 import static org.hamcrest.Matchers.*;
 import static com.jayway.restassured.module.jsv.JsonSchemaValidator.*;
 import org.junit.Test;
-import TestIDWALL.TestToken;
+import br.com.automation.TestIDWALL.TestToken;
 
 public class Conhecidos {
 	
@@ -26,7 +26,7 @@ public class Conhecidos {
 		   
 	    	 .then()
 	    	   .statusCode(400)
-	    	   .body("message", containsString("… necess·rio enviar ao menos um par‚metro para criaÁ„o do relatÛrio."));
+	    	   .body("message", containsString("√â necess√°rio enviar ao menos um par√¢metro para cria√ß√£o do relat√≥rio."));
 		}
 	
 	@Test
@@ -43,7 +43,7 @@ public class Conhecidos {
 		   
 	    	 .then()
 	    	   .statusCode(200)
-	    	   .body("message", containsString("Inv·lido. [ERROR] N„o foi possÌvel validar: Data de nascimento informada est· divergente da constante na base de dados da Secretaria da Receita Federal do Brasil."));
+	    	   .body("message", containsString("Inv√°lido. [ERROR] N√£o foi poss√≠vel validar: Data de nascimento informada est√° divergente da constante na base de dados da Secretaria da Receita Federal do Brasil."));
 		       .body("resultado", containsString("INVALID"));
 		}
 	
@@ -61,7 +61,7 @@ public class Conhecidos {
 		   
 	    	 .then()
 	    	   .statusCode(200)
-	    	   .body("message", containsString("Inv·lido. [INVALID] Nome diferente do cadastrado na Receita Federal."));
+	    	   .body("message", containsString("Inv√°lido. [INVALID] Nome diferente do cadastrado na Receita Federal."));
 		       .body("resultado", containsString("INVALID"));
 		}
 
